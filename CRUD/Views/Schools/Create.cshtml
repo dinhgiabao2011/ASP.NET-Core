@@ -1,0 +1,7 @@
+﻿@model CRUD.Models.Course
+
+<p>Form Create Course</p>
+<form method="POST" action="/Schools/Create">
+	<input type="text" asp-for="@Model.Name" />
+	<button type="submit">Submit</button>
+</form>

@@ -1,0 +1,9 @@
+﻿@model IEnumerable<CRUD.Models.Course>
+@{
+	foreach (var course in Model)
+	{
+		<a asp-action="Detail" asp-route-id="@course.Id">@course.Name</a>
+		<a asp-action="" asp-route-id="@course.Id"><i class="fas fa-trash"></i></a>
+	}
+	
+}
